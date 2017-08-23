@@ -163,7 +163,7 @@ output = talib.SMA(close)
 ```
 
 Calculating bollinger bands, with triple exponential moving average:
-计算布林带，并使用三级指数移动平均：
+计算布林带，并使用三重指数移动平均：
 
 ```python
 from talib import MA_Type
@@ -197,7 +197,7 @@ For example, inputs could be provided for the typical "OHLCV" data:
 ```python
 import numpy as np
 
-# note that all ndarrays must be the same length!
+# 注意所有的ndarray的长度必须相等
 inputs = {
     'open': np.random.random(100),
     'high': np.random.random(100),
@@ -292,22 +292,23 @@ BBANDS               布林带（ Bollinger Bands）
 DEMA                 双指数移动平均（Double Exponential Moving Average）
 EMA                  指数移动平均（Exponential Moving Average）
 HT_TRENDLINE         Hillber变换 - 瞬时趋势线（Hilbert Transform - Instantaneous Trendline）
-KAMA                 Kaufman Adaptive Moving Average
+KAMA                 考夫曼自适应移动平均线（Kaufman Adaptive Moving Average）
 MA                   移动平均（Moving average）
-MAMA                 MESA Adaptive Moving Average
-MAVP                 Moving average with variable period
+MAMA                 MESA自适应移动平均线（MESA Adaptive Moving Average）
+MAVP                 可变周期的移动平均（Moving average with variable period）
 MIDPOINT             MidPoint over period
 MIDPRICE             Midpoint Price over period
 SAR                  Parabolic SAR
 SAREXT               Parabolic SAR - Extended
-SMA                  Simple Moving Average
+SMA                  简单移动平均（Simple Moving Average）
 T3                   Triple Exponential Moving Average (T3)
-TEMA                 Triple Exponential Moving Average
-TRIMA                Triangular Moving Average
-WMA                  Weighted Moving Average
+TEMA                 三级指数移动平均（Triple Exponential Moving Average）
+TRIMA                三角移动平均（Triangular Moving Average）
+WMA                  加权移动平均（Weighted Moving Average）
 ```
 
 #### Momentum Indicators
+#### 动量指标
 ```
 ADX                  Average Directional Movement Index
 ADXR                 Average Directional Movement Index Rating
@@ -342,6 +343,7 @@ WILLR                Williams' %R
 ```
 
 #### Volume Indicators
+#### 交易量指标
 ```
 AD                   Chaikin A/D Line
 ADOSC                Chaikin A/D Oscillator
@@ -349,6 +351,7 @@ OBV                  On Balance Volume
 ```
 
 #### Cycle Indicators
+#### 周期指标
 ```
 HT_DCPERIOD          Hilbert Transform - Dominant Cycle Period
 HT_DCPHASE           Hilbert Transform - Dominant Cycle Phase
@@ -358,6 +361,7 @@ HT_TRENDMODE         Hilbert Transform - Trend vs Cycle Mode
 ```
 
 #### Price Transform
+#### 价格变换
 ```
 AVGPRICE             Average Price
 MEDPRICE             Median Price
@@ -366,6 +370,7 @@ WCLPRICE             Weighted Close Price
 ```
 
 #### Volatility Indicators
+#### 波动性指标
 ```
 ATR                  Average True Range
 NATR                 Normalized Average True Range
@@ -373,9 +378,10 @@ TRANGE               True Range
 ```
 
 #### Pattern Recognition
+#### 模式识别
 ```
-CDL2CROWS            Two Crows
-CDL3BLACKCROWS       Three Black Crows
+CDL2CROWS            两只乌鸦（Two Crows）
+CDL3BLACKCROWS       三只黑乌鸦（Three Black Crows）
 CDL3INSIDE           Three Inside Up/Down
 CDL3LINESTRIKE       Three-Line Strike
 CDL3OUTSIDE          Three Outside Up/Down
